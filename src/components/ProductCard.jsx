@@ -23,7 +23,7 @@ const ProductCard = ({ product, index = 0 }) => {
         </div>
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-1 sm:space-y-2">
         <p className="text-xs tracking-luxury uppercase text-muted-foreground">
           {product.category === "perfume"
             ? "Perfume"
@@ -31,10 +31,10 @@ const ProductCard = ({ product, index = 0 }) => {
             ? "Cream"
             : "Body Lotions"}
         </p>
-        <h3 className="font-serif text-xl md:text-2xl font-light tracking-wide text-foreground group-hover:text-accent transition-colors duration-300">
+        <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-light tracking-wide text-foreground group-hover:text-accent transition-colors duration-300">
           {product.name}
         </h3>
-        <p className="luxury-body text-sm text-muted-foreground line-clamp-2">
+        <p className="luxury-body text-xs sm:text-sm text-muted-foreground line-clamp-2">
           {product.tagline}
         </p>
       </div>

@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={perfume2}
@@ -16,12 +16,12 @@ const About = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
         </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-4xl mx-auto">
           <AnimatedSection>
-            <p className="text-xs tracking-luxury-wide uppercase text-accent mb-6">
+            <p className="text-xs sm:text-sm tracking-luxury-wide uppercase text-accent mb-4 sm:mb-6">
               Our Philosophy
             </p>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light text-foreground">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-foreground px-4">
               The Essence of SS
             </h1>
           </AnimatedSection>
@@ -29,15 +29,15 @@ const About = () => {
       </section>
 
       {/* Story Section 1 */}
-      <section className="py-24 md:py-32 lg:py-40 bg-background">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 items-center">
             <AnimatedSection>
-              <div className="space-y-8">
-                <h2 className="font-serif text-4xl md:text-5xl font-light leading-tight text-foreground">
+              <div className="space-y-4 sm:space-y-6 md:space-y-8">
+                <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-foreground">
                   Born from a passion for the extraordinary
                 </h2>
-                <div className="space-y-6 editorial-text text-muted-foreground">
+                <div className="space-y-4 sm:space-y-6 editorial-text text-sm sm:text-base md:text-lg text-muted-foreground">
                   <p>
                     SS was founded on a singular belief: that true luxury cannot
                     be rushed, replicated, or reduced. Every creation that bears
@@ -68,18 +68,18 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-24 md:py-32 bg-secondary">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20">
-          <AnimatedSection className="text-center mb-20">
-            <p className="text-xs tracking-luxury-wide uppercase text-accent mb-4">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-secondary">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
+          <AnimatedSection className="text-center mb-12 sm:mb-16 md:mb-20">
+            <p className="text-xs sm:text-sm tracking-luxury-wide uppercase text-accent mb-3 sm:mb-4">
               Our Values
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-foreground">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground">
               What We Stand For
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-8">
             <AnimatedSection delay={0}>
               <div className="text-center space-y-6">
                 <div className="w-16 h-px bg-accent mx-auto" />
@@ -126,14 +126,14 @@ const About = () => {
       </section>
 
       {/* Quote Section */}
-      <section className="py-24 md:py-32 lg:py-40 bg-primary">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-primary">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
-            <blockquote className="font-serif text-3xl md:text-4xl lg:text-5xl font-light leading-relaxed text-primary-foreground italic mb-8">
+            <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light leading-relaxed text-primary-foreground italic mb-6 sm:mb-8 px-4">
               "We don't create products. We craft experiences that become part
               of who you are."
             </blockquote>
-            <p className="text-xs tracking-luxury-wide uppercase text-accent">
+            <p className="text-xs sm:text-sm tracking-luxury-wide uppercase text-accent">
               — The Founders
             </p>
           </AnimatedSection>
@@ -141,13 +141,13 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
           <AnimatedSection className="text-center">
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-foreground mb-8">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6 sm:mb-8">
               Experience the Difference
             </h2>
-            <Link to="/collections" className="luxury-button">
+            <Link to="/collections" className="luxury-button text-xs sm:text-sm">
               Explore Collections
             </Link>
           </AnimatedSection>
