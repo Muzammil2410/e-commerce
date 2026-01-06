@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Blosta Font - Add @font-face if you have the font files */
+@font-face {
+  font-family: 'Blosta';
+  src: url('/fonts/Blosta-Regular.woff2') format('woff2'),
+       url('/fonts/Blosta-Regular.woff') format('woff'),
+       url('/fonts/Blosta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* SS Luxury Color Palette - Taupe & Beige */
+    /* #CAC4BA - Light Beige */
+    --background: 38 12% 76%;
+    /* #242320 - Very Dark */
+    --foreground: 45 6% 13%;
+
+    --card: 38 12% 78%;
+    --card-foreground: 45 6% 13%;
+
+    --popover: 38 12% 76%;
+    --popover-foreground: 45 6% 13%;
+
+    /* #4F473E - Dark Taupe */
+    --primary: 34 12% 28%;
+    --primary-foreground: 38 12% 76%;
+
+    /* #CAC4BA - Light Beige */
+    --secondary: 38 12% 76%;
+    --secondary-foreground: 45 6% 13%;
+
+    --muted: 38 10% 70%;
+    --muted-foreground: 45 6% 35%;
+
+    /* #4F473E - Dark Taupe as accent */
+    --accent: 34 12% 28%;
+    --accent-foreground: 38 12% 76%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 38 10% 65%;
+    --input: 38 10% 65%;
+    --ring: 34 12% 28%;
+
+    --radius: 0.25rem;
+
+    /* Custom luxury tokens */
+    --luxury-ivory: 38 12% 76%;
+    --luxury-cream: 38 12% 78%;
+    --luxury-navy: 34 12% 28%;
+    --luxury-navy-light: 34 12% 35%;
+    --luxury-gold: 34 12% 28%;
+    --luxury-gold-light: 34 12% 40%;
+    --luxury-charcoal: 45 6% 13%;
+    --luxury-warm-gray: 38 10% 55%;
+
+    --sidebar-background: 38 12% 76%;
+    --sidebar-foreground: 45 6% 13%;
+    --sidebar-primary: 34 12% 28%;
+    --sidebar-primary-foreground: 38 12% 76%;
+    --sidebar-accent: 38 12% 78%;
+    --sidebar-accent-foreground: 45 6% 13%;
+    --sidebar-border: 38 10% 65%;
+    --sidebar-ring: 34 12% 28%;
+  }
+
+  .dark {
+    /* Dark mode using the same color scheme */
+    --background: 45 6% 13%;
+    --foreground: 38 12% 76%;
+
+    --card: 45 6% 15%;
+    --card-foreground: 38 12% 76%;
+
+    --popover: 45 6% 13%;
+    --popover-foreground: 38 12% 76%;
+
+    --primary: 38 12% 76%;
+    --primary-foreground: 45 6% 13%;
+
+    --secondary: 34 12% 28%;
+    --secondary-foreground: 38 12% 76%;
+
+    --muted: 34 12% 25%;
+    --muted-foreground: 38 10% 65%;
+
+    --accent: 34 12% 28%;
+    --accent-foreground: 38 12% 76%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 38 12% 76%;
+
+    --border: 34 12% 25%;
+    --input: 34 12% 25%;
+    --ring: 34 12% 28%;
+
+    --sidebar-background: 45 6% 13%;
+    --sidebar-foreground: 38 12% 76%;
+    --sidebar-primary: 34 12% 28%;
+    --sidebar-primary-foreground: 38 12% 76%;
+    --sidebar-accent: 34 12% 25%;
+    --sidebar-accent-foreground: 38 12% 76%;
+    --sidebar-border: 34 12% 25%;
+    --sidebar-ring: 34 12% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    font-family: 'Blosta', 'Montserrat', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Blosta', 'Montserrat', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Blosta', 'Montserrat', sans-serif;
+    @apply font-normal tracking-wide;
+  }
+}
+
+@layer components {
+  .luxury-heading {
+    font-family: 'Blosta', 'Montserrat', sans-serif;
+    @apply font-normal tracking-[0.15em] uppercase;
+  }
+
+  .luxury-subheading {
+    font-family: 'Blosta', 'Montserrat', sans-serif;
+    @apply font-normal italic tracking-wide;
+  }
+
+  .luxury-body {
+    font-family: 'Blosta', 'Montserrat', sans-serif;
+    @apply font-normal tracking-wide leading-relaxed;
+  }
+
+  .luxury-link {
+    @apply relative inline-block;
+  }
+
+  .luxury-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-px bg-current scale-x-0 origin-right transition-transform duration-300;
+  }
+
+  .luxury-link:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+
+  .luxury-button {
+    @apply px-8 py-3 border border-primary bg-transparent text-primary tracking-[0.2em] uppercase text-xs font-medium transition-all duration-500;
+  }
+
+  .luxury-button:hover {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .luxury-button-gold {
+    @apply px-8 py-3 border border-accent bg-transparent text-accent tracking-[0.2em] uppercase text-xs font-medium transition-all duration-500;
+  }
+
+  .luxury-button-gold:hover {
+    @apply bg-accent text-background;
+  }
+
+  .editorial-text {
+    font-family: 'Blosta', 'Montserrat', sans-serif;
+    @apply text-lg md:text-xl leading-relaxed font-normal;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
