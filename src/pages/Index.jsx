@@ -280,7 +280,7 @@ const Index = () => {
                   FOUNDER'S VISION
                 </p>
                 <p className="editorial-text text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                  <span className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight text-foreground block mb-2 sm:mb-3">I'm Shermin</span> and my vision for SS is to redefine everyday luxury—where care meets intention, and scent becomes an extension of self. I strive to create products that are both effective and sensorial, empowering people to feel confident, nurtured, and uniquely themselves. Every formula, every fragrance, every ritual is designed to be precise, purposeful, and deeply personal—because true luxury is felt, not shown.
+                  <span className="font-serif font-light text-foreground">I'm Shermin</span> and my vision for SS is to redefine everyday luxury—where care meets intention, and scent becomes an extension of self. I strive to create products that are both effective and sensorial, empowering people to feel confident, nurtured, and uniquely themselves. Every formula, every fragrance, every ritual is designed to be precise, purposeful, and deeply personal—because true luxury is felt, not shown.
                 </p>
               </div>
             </AnimatedSection>
