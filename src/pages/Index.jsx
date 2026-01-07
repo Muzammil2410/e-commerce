@@ -38,7 +38,7 @@ const Index = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-4xl mx-auto">
-          <div className="overflow-hidden mb-4 md:mb-6">
+          <div className="overflow-hidden mb-8 md:mb-12">
             <h1
               className="luxury-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-foreground animate-reveal-text px-2"
               style={{ animationDelay: "300ms", fontFamily: "'Blosta', sans-serif" }}
@@ -46,17 +46,9 @@ const Index = () => {
               Art of Self Care
             </h1>
           </div>
-          <div className="overflow-hidden mb-8 md:mb-12">
-            <p
-              className="luxury-subheading text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/80 animate-reveal-text px-4"
-              style={{ animationDelay: "500ms" }}
-            >
-              Where luxury meets legacy
-            </p>
-          </div>
           <div
             className="animate-fade-in px-4"
-            style={{ animationDelay: "800ms" }}
+            style={{ animationDelay: "500ms" }}
           >
             <Link to="/collections" className="luxury-button text-xs sm:text-sm">
               Explore Collections
@@ -185,11 +177,11 @@ const Index = () => {
               </CarouselContent>
               <CarouselPrevious 
                 variant="ghost"
-                className="absolute left-2 sm:left-4 md:-left-8 lg:-left-14 xl:-left-16 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full bg-white/90 backdrop-blur-md border border-[#4F473E]/20 shadow-[0_4px_20px_rgba(79,71,62,0.15)] hover:shadow-[0_6px_30px_rgba(79,71,62,0.25)] hover:bg-[#4F473E] hover:border-[#4F473E] transition-all duration-500 ease-out text-[#4F473E] [&_svg]:text-[#4F473E] [&_svg]:h-4 [&_svg]:w-4 sm:[&_svg]:h-5 sm:[&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:stroke-[1.5] hover:[&_svg]:text-white [&_span]:hidden disabled:opacity-20 disabled:cursor-not-allowed disabled:hover:bg-white/90 disabled:hover:border-[#4F473E]/20 disabled:hover:shadow-[0_4px_20px_rgba(79,71,62,0.15)] z-10 flex items-center justify-center p-0 group" 
+                className="absolute left-2 sm:left-4 md:-left-8 lg:-left-14 xl:-left-16 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full bg-white/90 backdrop-blur-md border border-[#5C5B58]/20 shadow-[0_4px_20px_rgba(92,91,88,0.15)] hover:shadow-[0_6px_30px_rgba(92,91,88,0.25)] hover:bg-[#5C5B58] hover:border-[#5C5B58] transition-all duration-500 ease-out text-[#5C5B58] [&_svg]:text-[#5C5B58] [&_svg]:h-4 [&_svg]:w-4 sm:[&_svg]:h-5 sm:[&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:stroke-[1.5] hover:[&_svg]:text-white [&_span]:hidden disabled:opacity-20 disabled:cursor-not-allowed disabled:hover:bg-white/90 disabled:hover:border-[#5C5B58]/20 disabled:hover:shadow-[0_4px_20px_rgba(92,91,88,0.15)] z-10 flex items-center justify-center p-0 group" 
               />
               <CarouselNext 
                 variant="ghost"
-                className="absolute right-2 sm:right-4 md:-right-8 lg:-right-14 xl:-right-16 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full bg-white/90 backdrop-blur-md border border-[#4F473E]/20 shadow-[0_4px_20px_rgba(79,71,62,0.15)] hover:shadow-[0_6px_30px_rgba(79,71,62,0.25)] hover:bg-[#4F473E] hover:border-[#4F473E] transition-all duration-500 ease-out text-[#4F473E] [&_svg]:text-[#4F473E] [&_svg]:h-4 [&_svg]:w-4 sm:[&_svg]:h-5 sm:[&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:stroke-[1.5] hover:[&_svg]:text-white [&_span]:hidden disabled:opacity-20 disabled:cursor-not-allowed disabled:hover:bg-white/90 disabled:hover:border-[#4F473E]/20 disabled:hover:shadow-[0_4px_20px_rgba(79,71,62,0.15)] z-10 flex items-center justify-center p-0 group" 
+                className="absolute right-2 sm:right-4 md:-right-8 lg:-right-14 xl:-right-16 top-1/2 -translate-y-1/2 h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full bg-white/90 backdrop-blur-md border border-[#5C5B58]/20 shadow-[0_4px_20px_rgba(92,91,88,0.15)] hover:shadow-[0_6px_30px_rgba(92,91,88,0.25)] hover:bg-[#5C5B58] hover:border-[#5C5B58] transition-all duration-500 ease-out text-[#5C5B58] [&_svg]:text-[#5C5B58] [&_svg]:h-4 [&_svg]:w-4 sm:[&_svg]:h-5 sm:[&_svg]:w-5 md:[&_svg]:h-6 md:[&_svg]:w-6 [&_svg]:stroke-[1.5] hover:[&_svg]:text-white [&_span]:hidden disabled:opacity-20 disabled:cursor-not-allowed disabled:hover:bg-white/90 disabled:hover:border-[#5C5B58]/20 disabled:hover:shadow-[0_4px_20px_rgba(92,91,88,0.15)] z-10 flex items-center justify-center p-0 group" 
               />
             </Carousel>
           </div>
@@ -237,35 +229,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Founder's Vision Section */}
-      <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 items-start">
-            <AnimatedSection>
-              <div className="space-y-4 sm:space-y-6 md:space-y-8">
-                <p className="text-sm sm:text-base md:text-lg tracking-luxury-wide uppercase text-accent font-bold">
-                  FOUNDER'S VISION
-                </p>
-                <p className="editorial-text text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                  <span className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight text-foreground block mb-2 sm:mb-3">I'm Shermin</span> and my vision for SS is to redefine everyday luxury—where care meets intention, and scent becomes an extension of self. I strive to create products that are both effective and sensorial, empowering people to feel confident, nurtured, and uniquely themselves. Every formula, every fragrance, every ritual is designed to be precise, purposeful, and deeply personal—because true luxury is felt, not shown.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={200}>
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <img
-                  src={soloImage}
-                  alt="Founder's Vision"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
       {/* New Section Similar to Female Body Lotion */}
       <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-background">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
@@ -307,6 +270,35 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Founder's Vision Section */}
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 items-start">
+            <AnimatedSection>
+              <div className="space-y-4 sm:space-y-6 md:space-y-8">
+                <p className="text-sm sm:text-base md:text-lg tracking-luxury-wide uppercase text-accent font-bold">
+                  FOUNDER'S VISION
+                </p>
+                <p className="editorial-text text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
+                  <span className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight text-foreground block mb-2 sm:mb-3">I'm Shermin</span> and my vision for SS is to redefine everyday luxury—where care meets intention, and scent becomes an extension of self. I strive to create products that are both effective and sensorial, empowering people to feel confident, nurtured, and uniquely themselves. Every formula, every fragrance, every ritual is designed to be precise, purposeful, and deeply personal—because true luxury is felt, not shown.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={200}>
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <img
+                  src={soloImage}
+                  alt="Founder's Vision"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* Editorial Section */}
       <section className="relative py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 overflow-hidden">
         <div className="absolute inset-0">
@@ -318,14 +310,11 @@ const Index = () => {
         </div>
         <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
-            <p className="text-xs sm:text-sm tracking-luxury-wide uppercase text-accent mb-6 sm:mb-8">
-              The SS Promise
-            </p>
             <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light leading-relaxed text-foreground italic mb-8 sm:mb-10 md:mb-12 px-4">
               Your vibe, bottled
             </blockquote>
             <Link to="/collections" className="luxury-button-gold text-xs sm:text-sm">
-              Begin Your Journey
+              Shop now
             </Link>
           </AnimatedSection>
         </div>

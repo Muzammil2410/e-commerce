@@ -17,100 +17,125 @@
 
 @layer base {
   :root {
-    /* SS Luxury Color Palette - Taupe & Beige */
-    /* #CAC4BA - Light Beige */
-    --background: 38 12% 76%;
-    /* #242320 - Very Dark */
-    --foreground: 45 6% 13%;
+    /* SS Luxury Color Palette - New Schema */
+    /* #F7F6F5 - Very Light */
+    --background: 30 10% 96%;
+    /* #22211F - Very Dark */
+    --foreground: 30 5% 13%;
 
-    --card: 38 12% 78%;
-    --card-foreground: 45 6% 13%;
+    /* #E5E3E0 - Light */
+    --card: 30 8% 89%;
+    --card-foreground: 30 5% 13%;
 
-    --popover: 38 12% 76%;
-    --popover-foreground: 45 6% 13%;
+    /* #E5E3E0 - Light */
+    --popover: 30 8% 89%;
+    --popover-foreground: 30 5% 13%;
 
-    /* #4F473E - Dark Taupe */
-    --primary: 34 12% 28%;
-    --primary-foreground: 38 12% 76%;
+    /* #22211F - Very Dark */
+    --primary: 30 5% 13%;
+    --primary-foreground: 30 10% 96%;
 
-    /* #CAC4BA - Light Beige */
-    --secondary: 38 12% 76%;
-    --secondary-foreground: 45 6% 13%;
+    /* #A9A6A2 - Medium */
+    --secondary: 30 3% 65%;
+    --secondary-foreground: 30 5% 13%;
 
-    --muted: 38 10% 70%;
-    --muted-foreground: 45 6% 35%;
+    /* #5C5B58 - Medium Dark */
+    --muted: 30 2% 35%;
+    --muted-foreground: 30 5% 13%;
 
-    /* #4F473E - Dark Taupe as accent */
-    --accent: 34 12% 28%;
-    --accent-foreground: 38 12% 76%;
+    /* #5C5B58 - Medium Dark */
+    --accent: 30 2% 35%;
+    --accent-foreground: 30 10% 96%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 38 10% 65%;
-    --input: 38 10% 65%;
-    --ring: 34 12% 28%;
+    /* #A9A6A2 - Medium */
+    --border: 30 3% 65%;
+    --input: 30 3% 65%;
+    /* #5C5B58 - Medium Dark */
+    --ring: 30 2% 35%;
 
     --radius: 0.25rem;
 
-    /* Custom luxury tokens */
-    --luxury-ivory: 38 12% 76%;
-    --luxury-cream: 38 12% 78%;
-    --luxury-navy: 34 12% 28%;
-    --luxury-navy-light: 34 12% 35%;
-    --luxury-gold: 34 12% 28%;
-    --luxury-gold-light: 34 12% 40%;
-    --luxury-charcoal: 45 6% 13%;
-    --luxury-warm-gray: 38 10% 55%;
+    /* Custom luxury tokens - Updated to new palette */
+    --luxury-ivory: 30 10% 96%;
+    --luxury-cream: 30 8% 89%;
+    --luxury-navy: 30 5% 13%;
+    --luxury-navy-light: 30 2% 35%;
+    --luxury-gold: 30 2% 35%;
+    --luxury-gold-light: 30 3% 65%;
+    --luxury-charcoal: 30 5% 13%;
+    --luxury-warm-gray: 30 3% 65%;
 
-    --sidebar-background: 38 12% 76%;
-    --sidebar-foreground: 45 6% 13%;
-    --sidebar-primary: 34 12% 28%;
-    --sidebar-primary-foreground: 38 12% 76%;
-    --sidebar-accent: 38 12% 78%;
-    --sidebar-accent-foreground: 45 6% 13%;
-    --sidebar-border: 38 10% 65%;
-    --sidebar-ring: 34 12% 28%;
+    /* #E5E3E0 - Light */
+    --sidebar-background: 30 8% 89%;
+    --sidebar-foreground: 30 5% 13%;
+    /* #22211F - Very Dark */
+    --sidebar-primary: 30 5% 13%;
+    --sidebar-primary-foreground: 30 10% 96%;
+    /* #F7F6F5 - Very Light */
+    --sidebar-accent: 30 10% 96%;
+    --sidebar-accent-foreground: 30 5% 13%;
+    /* #A9A6A2 - Medium */
+    --sidebar-border: 30 3% 65%;
+    /* #5C5B58 - Medium Dark */
+    --sidebar-ring: 30 2% 35%;
   }
 
   .dark {
-    /* Dark mode using the same color scheme */
-    --background: 45 6% 13%;
-    --foreground: 38 12% 76%;
+    /* Dark mode using the new color scheme */
+    /* #22211F - Very Dark */
+    --background: 30 5% 13%;
+    /* #F7F6F5 - Very Light */
+    --foreground: 30 10% 96%;
 
-    --card: 45 6% 15%;
-    --card-foreground: 38 12% 76%;
+    /* #5C5B58 - Medium Dark */
+    --card: 30 2% 35%;
+    --card-foreground: 30 10% 96%;
 
-    --popover: 45 6% 13%;
-    --popover-foreground: 38 12% 76%;
+    /* #22211F - Very Dark */
+    --popover: 30 5% 13%;
+    --popover-foreground: 30 10% 96%;
 
-    --primary: 38 12% 76%;
-    --primary-foreground: 45 6% 13%;
+    /* #E5E3E0 - Light */
+    --primary: 30 8% 89%;
+    --primary-foreground: 30 5% 13%;
 
-    --secondary: 34 12% 28%;
-    --secondary-foreground: 38 12% 76%;
+    /* #A9A6A2 - Medium */
+    --secondary: 30 3% 65%;
+    --secondary-foreground: 30 10% 96%;
 
-    --muted: 34 12% 25%;
-    --muted-foreground: 38 10% 65%;
+    /* #5C5B58 - Medium Dark */
+    --muted: 30 2% 35%;
+    --muted-foreground: 30 8% 89%;
 
-    --accent: 34 12% 28%;
-    --accent-foreground: 38 12% 76%;
+    /* #A9A6A2 - Medium */
+    --accent: 30 3% 65%;
+    --accent-foreground: 30 5% 13%;
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 38 12% 76%;
+    --destructive-foreground: 30 10% 96%;
 
-    --border: 34 12% 25%;
-    --input: 34 12% 25%;
-    --ring: 34 12% 28%;
+    /* #5C5B58 - Medium Dark */
+    --border: 30 2% 35%;
+    --input: 30 2% 35%;
+    /* #A9A6A2 - Medium */
+    --ring: 30 3% 65%;
 
-    --sidebar-background: 45 6% 13%;
-    --sidebar-foreground: 38 12% 76%;
-    --sidebar-primary: 34 12% 28%;
-    --sidebar-primary-foreground: 38 12% 76%;
-    --sidebar-accent: 34 12% 25%;
-    --sidebar-accent-foreground: 38 12% 76%;
-    --sidebar-border: 34 12% 25%;
-    --sidebar-ring: 34 12% 28%;
+    /* #22211F - Very Dark */
+    --sidebar-background: 30 5% 13%;
+    --sidebar-foreground: 30 10% 96%;
+    /* #5C5B58 - Medium Dark */
+    --sidebar-primary: 30 2% 35%;
+    --sidebar-primary-foreground: 30 10% 96%;
+    /* #5C5B58 - Medium Dark */
+    --sidebar-accent: 30 2% 35%;
+    --sidebar-accent-foreground: 30 10% 96%;
+    /* #5C5B58 - Medium Dark */
+    --sidebar-border: 30 2% 35%;
+    /* #A9A6A2 - Medium */
+    --sidebar-ring: 30 3% 65%;
   }
 }
 

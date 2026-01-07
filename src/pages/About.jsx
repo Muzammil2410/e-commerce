@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "@/components/AnimatedSection";
-import perfume2 from "@/assets/products/perfume-2.jpg";
+import aboutHeroImage from "@/assets/products/1 (2).JPG";
 import cream2 from "@/assets/products/cream-2.jpg";
 
 const About = () => {
@@ -10,9 +10,10 @@ const About = () => {
       <section className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={perfume2}
+            src={aboutHeroImage}
             alt="SS Philosophy"
-            className="w-full h-full object-cover opacity-80"
+            className="w-full h-full object-cover object-center object-top opacity-80"
+            style={{ objectPosition: 'center 30%' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
         </div>
@@ -21,9 +22,6 @@ const About = () => {
             <p className="text-xs sm:text-sm tracking-luxury-wide uppercase text-accent mb-4 sm:mb-6">
               Our Philosophy
             </p>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-foreground px-4">
-              The Essence of SS
-            </h1>
           </AnimatedSection>
         </div>
       </section>
@@ -38,17 +36,10 @@ const About = () => {
                   Born from a passion for the extraordinary
                 </h2>
                 <div className="space-y-4 sm:space-y-6 editorial-text text-sm sm:text-base md:text-lg text-muted-foreground">
-                  <p>
-                    SS was founded on a singular belief: that true luxury cannot
-                    be rushed, replicated, or reduced. Every creation that bears
-                    our name is the result of countless hours of refinement,
-                    sourcing only the rarest ingredients from corners of the
-                    world where quality is still considered sacred.
-                  </p>
-                  <p>
-                    We do not follow trends. We do not compromise. We create for
-                    those who understand that the most precious things in life
-                    are worth waiting for.
+                  <p style={{ fontFamily: "'Blosta', sans-serif" }}>
+                    SS was founded on a singular belief: true luxury cannot be rushed, replicated, or diluted. Every creation bearing our name is
+                    the result of disciplined craftsmanship, meticulous refinement, and an uncompromising pursuit of excellence. We
+                    source only the most exceptional ingredients from regions where quality is not a trend, but a legacy that is respected, protected, and treated as sacred.
                   </p>
                 </div>
               </div>

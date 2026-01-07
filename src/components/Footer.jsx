@@ -12,6 +12,7 @@ const Footer = () => {
             <Link
               to="/"
               className="luxury-heading text-2xl sm:text-3xl tracking-luxury-wide hover:text-accent transition-colors duration-400"
+              style={{ fontFamily: "'Blosta', sans-serif" }}
             >
               SS
             </Link>

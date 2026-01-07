@@ -39,6 +39,7 @@ const Header = () => {
             <Link
               to="/"
               className="luxury-heading text-xl sm:text-2xl md:text-3xl tracking-luxury-wide text-foreground hover:text-accent transition-colors duration-400"
+              style={{ fontFamily: "'Blosta', sans-serif" }}
             >
               SS
             </Link>

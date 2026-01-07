@@ -18,6 +18,7 @@ import img5232 from "@/assets/products/IMG_5232.JPG";
 import img6_2 from "@/assets/products/6 (2).JPG";
 import img5260 from "@/assets/products/IMG_5260.JPG";
 import img5307 from "@/assets/products/IMG_5307.JPG";
+import img5308 from "@/assets/products/IMG_5308.JPG";
 import img5263 from "@/assets/products/IMG_5263.JPG";
 import img5278 from "@/assets/products/IMG_5278.JPG";
 import img5237 from "@/assets/products/IMG_5237.JPG";
@@ -141,7 +142,7 @@ export const products = [
     sillage: "Moderate to strong",
     longevity: "8-9 hours",
     image: img9,
-    gallery: [img9, img5237, img9],
+    gallery: [img9, img5308, img9],
   },
   {
     id: "face-cream-cleo",
@@ -162,26 +163,6 @@ export const products = [
     directions: "Apply a small amount to clean skin, morning and night. Massage gently until fully absorbed. Ideal for daily use or as a calming ritual whenever your skin needs a boost.",
     image: img5286,
     gallery: [img5286, img5285, img5236],
-  },
-  {
-    id: "celestial-bloom",
-    name: "Celestial Bloom",
-    category: "perfume",
-    tagline: "Heavenly scents, earthly delight",
-    description: "Inspired by the ethereal beauty of blooming gardens at dawn, this fragrance captures the essence of fresh florals kissed by morning dew. A symphony of nature's finest.",
-    notes: ["Gardenia", "Lily", "White Tea", "Musk"],
-    image: img4899,
-    gallery: [img4899, perfume2, perfume3],
-  },
-  {
-    id: "royal-essence",
-    name: "Royal Essence",
-    category: "perfume",
-    tagline: "Regal sophistication in every drop",
-    description: "A majestic blend crafted for those who appreciate the finer things. Rich, opulent, and undeniably luxurious, this fragrance commands attention and leaves an unforgettable impression.",
-    notes: ["Frankincense", "Rose", "Oud", "Amber"],
-    image: img4901,
-    gallery: [img4901, perfume3, perfume1],
   },
   {
     id: "fruite-creme",
