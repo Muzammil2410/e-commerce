@@ -170,7 +170,7 @@ const Index = () => {
                     className="pl-2 sm:pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
                   >
                     <AnimatedSection delay={index * 150}>
-                      <ProductCard product={product} index={index} />
+                      <ProductCard product={product} index={index} isFeatured={true} />
                     </AnimatedSection>
                   </CarouselItem>
                 ))}

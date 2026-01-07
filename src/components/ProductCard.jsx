@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ product, index = 0 }) => {
+const ProductCard = ({ product, index = 0, isFeatured = false }) => {
   return (
     <Link
       to={`/product/${product.id}`}
@@ -34,6 +34,11 @@ const ProductCard = ({ product, index = 0 }) => {
         <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-light tracking-wide text-foreground group-hover:text-accent transition-colors duration-300">
           {product.name}
         </h3>
+        {isFeatured && product.category === "perfume" && (
+          <p className="text-xs sm:text-sm text-muted-foreground">
+            50ML
+          </p>
+        )}
         <p className="luxury-body text-xs sm:text-sm text-muted-foreground line-clamp-2">
           {product.tagline}
         </p>
