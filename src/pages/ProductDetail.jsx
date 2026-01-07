@@ -258,9 +258,12 @@ const ProductDetail = () => {
                   </div>
                 )}
 
-                <div className="pt-2 sm:pt-4">
+                <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <button className="luxury-button w-full sm:w-auto text-xs sm:text-sm">
-                    Inquire
+                    Buy now
+                  </button>
+                  <button className="luxury-button-gold w-full sm:w-auto text-xs sm:text-sm">
+                    Add to Cart
                   </button>
                 </div>
               </div>

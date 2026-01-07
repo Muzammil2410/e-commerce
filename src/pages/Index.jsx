@@ -20,7 +20,8 @@ import newSectionImage from "@/assets/products/IMG_5236.JPG";
 import promiseImage from "@/assets/products/IMG_4896.JPEG";
 
 const Index = () => {
-  const featuredProducts = products.slice(0, 6);
+  const featuredProducts = products.filter(p => p.category === "perfume").slice(0, 6);
+  const bodyLotionProducts = products.filter(p => p.category === "soap").slice(0, 2);
 
   return (
     <>
@@ -188,6 +189,39 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Body Lotions Section */}
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
+          <AnimatedSection className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 sm:mb-16 md:mb-20 gap-4 sm:gap-6">
+            <div>
+              <p className="text-xs sm:text-sm tracking-luxury-wide uppercase text-accent mb-3 sm:mb-4">
+                Body Care
+              </p>
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground">
+                Skin Moisturizing Essentials
+              </h2>
+              <p className="text-xs sm:text-sm text-muted-foreground mt-2 sm:mt-3">
+                Nourishing body lotions for complete skin moisturizing and hydration
+              </p>
+            </div>
+            <Link
+              to="/collections?category=soap"
+              className="luxury-link text-xs sm:text-sm tracking-luxury uppercase text-foreground hover:text-accent w-fit"
+            >
+              View All
+            </Link>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 max-w-4xl mx-auto">
+            {bodyLotionProducts.map((product, index) => (
+              <AnimatedSection key={product.id} delay={index * 150}>
+                <ProductCard product={product} index={index} />
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* New Philosophy Section */}
       <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-background">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
@@ -250,13 +284,13 @@ const Index = () => {
                   Face Cream
                 </p>
                 <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight text-foreground">
-                  CLÉO
+                  CLÉA
                 </h2>
                 <p className="text-xs sm:text-sm tracking-luxury-wide uppercase text-accent mb-3 sm:mb-4">
                   The hydration luxury.
                 </p>
                 <p className="editorial-text text-sm sm:text-base md:text-lg text-muted-foreground">
-                  Elevate your daily ritual with this lightweight, hydrating face cream. Expertly formulated for all skin types, it soothes, nourishes, and restores balance, leaving your skin soft, supple, and naturally radiant. Its silky texture absorbs effortlessly, delivering lasting moisture without heaviness. CLÉO creates the perfect canvas for a flawless complexion, while supporting your skin's natural barrier.
+                  Elevate your daily ritual with this lightweight, hydrating face cream. Expertly formulated for all skin types, it soothes, nourishes, and restores balance, leaving your skin soft, supple, and naturally radiant. Its silky texture absorbs effortlessly, delivering lasting moisture without heaviness. CLÉA creates the perfect canvas for a flawless complexion, while supporting your skin's natural barrier.
                 </p>
                 <Link
                   to="/about"

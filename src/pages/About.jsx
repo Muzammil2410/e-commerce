@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "@/components/AnimatedSection";
 import aboutHeroImage from "@/assets/products/1 (2).JPG";
-import cream2 from "@/assets/products/cream-2.jpg";
 
 const About = () => {
   return (
@@ -29,7 +28,7 @@ const About = () => {
       {/* Story Section 1 */}
       <section className="py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-background">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 items-center">
+          <div className="max-w-3xl">
             <AnimatedSection>
               <div className="space-y-4 sm:space-y-6 md:space-y-8">
                 <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-foreground">
@@ -42,16 +41,6 @@ const About = () => {
                     source only the most exceptional ingredients from regions where quality is not a trend, but a legacy that is respected, protected, and treated as sacred.
                   </p>
                 </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={200}>
-              <div className="aspect-[4/5] overflow-hidden">
-                <img
-                  src={cream2}
-                  alt="SS Craftsmanship"
-                  className="w-full h-full object-cover"
-                />
               </div>
             </AnimatedSection>
           </div>

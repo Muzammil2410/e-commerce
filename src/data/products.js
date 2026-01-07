@@ -145,11 +145,11 @@ export const products = [
     gallery: [img9, img5308, img9],
   },
   {
-    id: "face-cream-cleo",
-    name: "FACE CREAM CLÉO",
+    id: "face-cream-clea",
+    name: "FACE CREAM CLÉA",
     category: "cream",
     tagline: "The hydration luxury.",
-    description: "Elevate your daily ritual with this lightweight, hydrating face cream. Expertly formulated for all skin types, it soothes, nourishes, and restores balance, leaving your skin soft, supple, and naturally radiant. Its silky texture absorbs effortlessly, delivering lasting moisture without heaviness. CLÉO creates the perfect canvas for a flawless complexion, while supporting your skin's natural barrier.",
+    description: "Elevate your daily ritual with this lightweight, hydrating face cream. Expertly formulated for all skin types, it soothes, nourishes, and restores balance, leaving your skin soft, supple, and naturally radiant. Its silky texture absorbs effortlessly, delivering lasting moisture without heaviness. CLÉA creates the perfect canvas for a flawless complexion, while supporting your skin's natural barrier.",
     keyFeatures: [
       "Deeply hydrating, yet weightless",
       "Soothes and calms irritated or sensitive skin",
