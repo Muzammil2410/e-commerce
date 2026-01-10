@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingBag } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { getCartItemCount } = useCart();
+  const cartItemCount = getCartItemCount();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,16 +62,64 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
+              
+              {/* Cart Icon */}
+              <Link
+                to="/cart"
+                className="relative text-foreground hover:text-accent transition-colors duration-300"
+                aria-label="Shopping cart"
+              >
+                <ShoppingBag size={20} />
+                {cartItemCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-[10px] font-medium rounded-full h-5 w-5 flex items-center justify-center">
+                    {cartItemCount > 99 ? "99+" : cartItemCount}
+                  </span>
+                )}
+              </Link>
+
+              {/* Auth Buttons */}
+              <div className="flex items-center gap-4">
+                <Link
+                  to="/login"
+                  className={`luxury-link text-sm tracking-luxury uppercase font-light transition-colors duration-300 ${
+                    location.pathname === "/login"
+                      ? "text-accent"
+                      : "text-foreground hover:text-accent"
+                  }`}
+                >
+                  Login
+                </Link>
+                <Link
+                  to="/signup"
+                  className="luxury-button text-xs px-6 py-2"
+                >
+                  Signup
+                </Link>
+              </div>
             </nav>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-foreground hover:text-accent transition-colors duration-300"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {/* Mobile Menu Button and Cart */}
+            <div className="md:hidden flex items-center gap-4">
+              <Link
+                to="/cart"
+                className="relative text-foreground hover:text-accent transition-colors duration-300"
+                aria-label="Shopping cart"
+              >
+                <ShoppingBag size={20} />
+                {cartItemCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-[10px] font-medium rounded-full h-5 w-5 flex items-center justify-center">
+                    {cartItemCount > 99 ? "99+" : cartItemCount}
+                  </span>
+                )}
+              </Link>
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-foreground hover:text-accent transition-colors duration-300"
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -106,6 +157,36 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
+          <Link
+            to="/cart"
+            className={`luxury-heading text-3xl tracking-luxury transition-colors duration-300 ${
+              location.pathname === "/cart"
+                ? "text-accent"
+                : "text-foreground hover:text-accent"
+            }`}
+          >
+            Cart ({cartItemCount})
+          </Link>
+          <Link
+            to="/login"
+            className={`luxury-heading text-3xl tracking-luxury transition-colors duration-300 ${
+              location.pathname === "/login"
+                ? "text-accent"
+                : "text-foreground hover:text-accent"
+            }`}
+          >
+            Login
+          </Link>
+          <Link
+            to="/signup"
+            className={`luxury-heading text-3xl tracking-luxury transition-colors duration-300 ${
+              location.pathname === "/signup"
+                ? "text-accent"
+                : "text-foreground hover:text-accent"
+            }`}
+          >
+            Signup
+          </Link>
         </nav>
       </div>
     </>

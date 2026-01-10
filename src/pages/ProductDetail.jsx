@@ -1,14 +1,19 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { getProductById, products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import { useState } from "react";
+import { useCart } from "@/contexts/CartContext";
+import { useToast } from "@/hooks/use-toast";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const product = getProductById(id || "");
   const [selectedImage, setSelectedImage] = useState(0);
+  const navigate = useNavigate();
+  const { addToCart } = useCart();
+  const { toast } = useToast();
 
   if (!product) {
     return (
@@ -259,10 +264,25 @@ const ProductDetail = () => {
                 )}
 
                 <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <button className="luxury-button w-full sm:w-auto text-xs sm:text-sm">
+                  <button
+                    onClick={() => {
+                      addToCart(product, 1);
+                      navigate("/checkout");
+                    }}
+                    className="luxury-button w-full sm:w-auto text-xs sm:text-sm"
+                  >
                     Buy now
                   </button>
-                  <button className="luxury-button-gold w-full sm:w-auto text-xs sm:text-sm">
+                  <button
+                    onClick={() => {
+                      addToCart(product, 1);
+                      toast({
+                        title: "Added to Cart",
+                        description: `${product.name} has been added to your cart.`,
+                      });
+                    }}
+                    className="luxury-button-gold w-full sm:w-auto text-xs sm:text-sm"
+                  >
                     Add to Cart
                   </button>
                 </div>
